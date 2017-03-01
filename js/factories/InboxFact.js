@@ -22,16 +22,15 @@ angular.module('EmailApp')
         // }
         //
         exports.getMessages = function () {
-        //     var deferred = $q.defer();
+            var deferred = $q.defer();
             return $http.get('json/emails.json')
-        //         .success(function (data) {
-        //             exports.messages = data;
-        //             deferred.resolve(data);
-        //         })
-        //         .error(function (data) {
-        //             deferred.reject(data);
-        //         });
-        //     return deferred.promise;
+                .then(function (data) {
+                    exports.messages = data;
+                    deferred.resolve(data);
+                }, function (data) {
+                    deferred.reject(data);
+                });
+            return deferred.promise;
         };
 
         return exports;

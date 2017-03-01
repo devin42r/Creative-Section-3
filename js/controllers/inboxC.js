@@ -5,7 +5,7 @@ angular.module('EmailApp')
     .controller('inboxC',
         function InboxCtrl () {
             'use strict';
-            console.log('Inbox Loaded!')
+            // console.log('Inbox Loaded!')
 
             this.title='hello';
         });
