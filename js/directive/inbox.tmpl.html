@@ -1,6 +1,7 @@
 <div class="inbox">
 
     <div class="search-bar">
+        {{ inbox.messages }}
         <div class="inbox__count">
             You have {{ inbox.messages.data.length && inbox.messages.data.length || 'no' }} messages
         </div>

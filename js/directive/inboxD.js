@@ -18,15 +18,15 @@ angular.module('EmailApp')
 
             controller: function (InboxFact) {
                 this.messages = [];
-        //
-        //         this.goToMessage = function (id) {
-        //             InboxFact.goToMessage(id);
-        //         };
-        //
-        //         this.deleteMessage = function (id, index) {
-        //             InboxFact.deleteMessage(id, index);
-        //         };
-        //
+
+                this.goToMessage = function (id) {
+                    InboxFact.goToMessage(id);
+                };
+
+                this.deleteMessage = function (id, index) {
+                    InboxFact.deleteMessage(id, index);
+                };
+
                 InboxFact.getMessages()
                     .then( angular.bind( this, function then() {
                         console.log(arguments)

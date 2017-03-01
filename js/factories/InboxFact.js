@@ -9,18 +9,18 @@ angular.module('EmailApp')
         var exports = {};
         //
         exports.messages = [];
-        //
-        // exports.goToMessage = function(id) {
-        //     if ( angular.isNumber(id) ) {
-        //         console.log('inbox/email/' + id)
-        //         $location.path('inbox/email/' + id)
-        //     }
-        // }
-        //
-        // exports.deleteMessage = function (id, index) {
-        //     this.messages.splice(index, 1);
-        // }
-        //
+
+        exports.goToMessage = function(id) {
+            if ( angular.isNumber(id) ) {
+                console.log('inbox/email/' + id)
+                // $location.path('inbox/email/' + id)
+            }
+        }
+
+        exports.deleteMessage = function (id, index) {
+            this.messages.data.splice(index, 1);
+        }
+
         exports.getMessages = function () {
             var deferred = $q.defer();
             return $http.get('json/emails.json')

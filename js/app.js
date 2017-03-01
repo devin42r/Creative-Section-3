@@ -11,11 +11,11 @@ angular.module('EmailApp', [
             controller: 'inboxC',
             controllerAs: 'inbox'
         })
-        // .when('/inbox/email/:id', {
-        //     templateUrl: 'views/email.html',
-        //     controller: 'EmailCtrl',
-        //     controllerAs: 'email'
-        // })
+        .when('/inbox/email/:id', {
+            templateUrl: 'views/email.html',
+            controller: 'EmailCtrl',
+            controllerAs: 'email'
+        })
         .otherwise({
             redirectTo: '/inbox'
         });

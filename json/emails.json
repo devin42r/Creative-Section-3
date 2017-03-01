@@ -1,20 +1,20 @@
 [
   {
-    "from": "TicketFactory",
+    "from": "Bruce Conrad",
     "date": 1400956671914,
-    "subject": "Your confirmation #W45021238038",
+    "subject": "Congratulations, you've won!",
     "id": 50223456
   },
   {
-    "from": "TravisCI",
+    "from": "Jordan",
     "date": 1400956671914,
-    "subject": "[Passed] conditionizr/conditionizr#1 (v0.1.0 - edd6500)",
+    "subject": "CS 201R failing grade",
     "id": 10824581
   },
   {
-    "from": "GitHub",
+    "from": "Devin",
     "date": 1400956671914,
-    "subject": "New repo 'conditionizr' created",
+    "subject": "Old repo fried",
     "id": 90345551
   },
   {
