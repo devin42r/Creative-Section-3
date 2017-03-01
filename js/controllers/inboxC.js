@@ -3,7 +3,7 @@
  */
 angular.module('EmailApp')
     .controller('inboxC',
-        function InboxCtrl ( ) {
+        function InboxCtrl () {
             'use strict';
             console.log('Inbox Loaded!')
 
