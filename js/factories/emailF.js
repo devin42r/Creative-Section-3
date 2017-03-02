@@ -2,7 +2,7 @@
  * Created by devin on 3/1/17.
  */
 angular.module('EmailApp')
-    .factory('EmailFactory', function EmailFactory (
+    .factory('emailF', function emailF (
         // $q, $http, $routeParams
     ) {
         // 'use strict';

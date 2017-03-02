@@ -13,7 +13,7 @@ angular.module('EmailApp', [
         })
         .when('/inbox/email/:id', {
             templateUrl: 'views/email.html',
-            controller: 'EmailCtrl',
+            controller: 'emailC',
             controllerAs: 'email'
         })
         .otherwise({

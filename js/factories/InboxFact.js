@@ -13,7 +13,7 @@ angular.module('EmailApp')
         exports.goToMessage = function(id) {
             if ( angular.isNumber(id) ) {
                 console.log('inbox/email/' + id)
-                // $location.path('inbox/email/' + id)
+                $location.path('inbox/email/' + id)
             }
         }
 

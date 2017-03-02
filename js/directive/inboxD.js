@@ -29,7 +29,7 @@ angular.module('EmailApp')
 
                 InboxFact.getMessages()
                     .then( angular.bind( this, function then() {
-                        console.log(arguments)
+                        // console.log(arguments)
                         this.messages = InboxFact.messages;
                     }) );
 
