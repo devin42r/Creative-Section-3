@@ -12,18 +12,18 @@ angular.module('EmailApp')
             templateUrl: "js/directive/email.tmpl.html",
             controllerAs: 'email',
             controller: function ($routeParams, $scope, emailF) {
-                // this.message = {};
+                this.message = {};
                 // this.reply = function (message) {
                 //     emailF.reply(message);
                 // };
-                // var getmessage = emailF.getMessage($routeParams);
-                // if (getmessage) {
-                //     getmessage.then( angular.bind(this, function (response) {
-                //         emailF.message = response;
-                //         this.message = emailF.message;
-                //         $scope.$parent.email.title = this.message.subject;
-                //     }) );
-                // }
+                var getmessage = emailF.getMessage($routeParams);
+                if (getmessage) {
+                    getmessage.then( angular.bind(this, function (response) {
+                        emailF.message = response;
+                        this.message = emailF.message;
+                        $scope.$parent.email.title = this.message.subject;
+                    }) );
+                }
             },
             // link: function (scope, element, attrs, ctrl) {
             //     var textarea = element.find('.email__response-text')[0];

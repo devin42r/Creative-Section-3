@@ -3,7 +3,7 @@
  */
 angular.module('EmailApp')
     .factory('emailF', function emailF (
-        // $q, $http, $routeParams
+        $q, $http, $routeParams
     ) {
         // 'use strict';
         var exports = {};
@@ -20,10 +20,9 @@ angular.module('EmailApp')
             if ( params.id ) {
                 var deferred = $q.defer();
                 $http.get('json/message/' + params.id + '.json')
-                    .success(function (data) {
+                    .then(function (data) {
                         deferred.resolve(data);
-                    })
-                    .error(function (data) {
+                    }, function (data) {
                         deferred.reject(data);
                     });
                 return deferred.promise;

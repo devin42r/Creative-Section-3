@@ -2,7 +2,8 @@
  * Created by devin on 2/28/17.
  */
 angular.module('EmailApp', [
-    'ngRoute'
+    'ngRoute',
+    'ngSanitize'
 ]).config(function ( $routeProvider ) {
     'use strict';
     $routeProvider
