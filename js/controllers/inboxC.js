@@ -7,5 +7,5 @@ angular.module('EmailApp')
             'use strict';
             // console.log('Inbox Loaded!')
 
-            this.title='hello';
+            this.title='Messages';
         });
